@@ -10,7 +10,7 @@ Classifying composer from classical music.  Using symbolic MIDI data, comparing 
 
 ## Overview
 Experienced musicians can often detect composer based off the unique style, but this is a hard task for novice listeners. This project builds an end-to-end pipeline that parses raw MIDI files into features, trains and compares two artitectures, and evaluates both models to see how they perform.
-# Result: 
+# Result
 The CNN outperformed the LSTM, suggesting for this feature set, short-range musical patterns are more discriminative of a composers identity than long-range dependencies.
 
 ## Repository Contents
@@ -22,7 +22,7 @@ Description: Full pipeline data download, preprocessing, EDA, Model Training, an
 - Raw Size: 3,929 MIDI files across 175 composers
 - Filtered to 4 Target Composers: Bach, Beethoven, Chopin, Mozart
 
-  ## Feature Extraction & Preproccessing
+## Feature Extraction & Preproccessing
   Each MIDI file is parsed with pretty_midi, every note has four extracted features:
   - Pitch - MIDI note number
   - Step - time elapsed since previous note
